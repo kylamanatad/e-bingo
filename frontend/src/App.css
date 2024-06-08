@@ -1,0 +1,92 @@
+.container {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  max-width: 1000;
+  margin: auto;
+}
+
+h1 {
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 10px 10px;
+  height: 30px;
+  width: 150px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.bingo-card {
+  border: 2px solid #3498db;
+  width: 250px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.bingo-header {
+  display: flex;
+  background: #3498db;
+  color: #fff;
+}
+
+.bingo-header-cell, .bingo-cell {
+  border-right: 1px solid #ffffff;
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.bingo-header-cell:last-child, .bingo-cell:last-child {
+  border-right: none;
+}
+
+.bingo-column {
+  display: flex;
+}
+
+.bingo-cell {
+  background: #fff;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bingo-cell:hover {
+  background-color: #E7F5FF;
+  transform: scale(1.1);
+}
+
+.bingo-card-id {
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 14px;
+}
+
+.bingo-won {
+  background-color: #e0ffe0;
+  border-color: green;
+  border: 3px solid #ef7dad;
+}
